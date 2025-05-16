@@ -23,11 +23,12 @@ ClientScript({
 //creates a business rule that pops up state change message whenever a todo record is updated
 BusinessRule({
     $id: Now.ID['br0'],
-    action: ['update'],
+    action: ["update"],
     table: 'incident',
     script: showStateUpdate,
     name: 'LogStateChange',
     order: 100,
     when: 'after',
     active: true,
+    abort_action: false
 })
