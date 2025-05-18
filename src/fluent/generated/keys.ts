@@ -24,22 +24,8 @@ declare global {
                         "new-role": {
                             "table": "sys_user_role",
                             "id": "2b20f96e852a4cdf8050258b229e3135"
-                        },
-                        "new-acl": {
-                            "table": "sys_security_acl",
-                            "id": "dc63d36fe43a441c81624e4e0df52a13"
                         }
                     };
-                composite: [
-                        {
-                            "table": "sys_security_acl_role",
-                            "id": "a63df8411a754734bbe9b660e2006c37",
-                            "key": {
-                                "sys_security_acl": "new-acl",
-                                "sys_user_role": "x_acar_gsapp.new_role"
-                            }
-                        }
-                    ];
             }
         }
     }

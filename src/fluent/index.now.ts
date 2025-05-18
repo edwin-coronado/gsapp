@@ -1,4 +1,4 @@
-import { Acl, BusinessRule, ClientScript, Role } from '@servicenow/sdk/core'
+import { BusinessRule, ClientScript, Role } from '@servicenow/sdk/core'
 import '@servicenow/sdk/global'
 import { showStateUpdate } from '../server/script.js'
 
@@ -36,12 +36,4 @@ BusinessRule({
 Role({
     $id: Now.ID['new-role'],
     name: "x_acar_gsapp.new_role"
-})
-
-Acl({
-    $id: Now.ID['new-acl'],
-    operation: "delete",
-    type: "record",
-    table: "sc_req_item",
-    roles: ["x_acar_gsapp.new_role"]
 })
