@@ -1,4 +1,4 @@
-import { BusinessRule, ClientScript } from '@servicenow/sdk/core'
+import { BusinessRule, ClientScript, Role } from '@servicenow/sdk/core'
 import '@servicenow/sdk/global'
 import { showStateUpdate } from '../server/script.js'
 
@@ -31,4 +31,9 @@ BusinessRule({
     when: 'after',
     active: true,
     abort_action: false
+})
+
+Role({
+    $id: Now.ID['new-role'],
+    name: "x_acar_gsapp.new_role"
 })
