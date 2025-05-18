@@ -20,6 +20,10 @@ declare global {
                         "package_json": {
                             "table": "sys_module",
                             "id": "cd6fb5920ed9408685c7212bbb4fb4c7"
+                        },
+                        "new-role": {
+                            "table": "sys_user_role",
+                            "id": "2b20f96e852a4cdf8050258b229e3135"
                         }
                     };
             }
